@@ -18,14 +18,14 @@ Module.register("MMM-SolarEdge",{
         // Logging appears in Chrome developer tools console
         Log.info("Starting module: " + this.name);
 
-        this.titles = ["Aktuelle Leistung:", "Tägliche Leistung:", "Dieser Monat:", "Dieses Jahr:", "Total:"];
+        this.titles = ["Aktuelli Leischtig:", "Täglechi Leischtig:", "Dä Monet:", "Das Johr:", "Total:"];
         this.suffixes = ["Watt", "kWh", "kWh", "kWh", "MWh"];
         this.results = ["Loading", "Loading", "Loading", "Loading", "Loading"];
         this.loaded = false;
         this.getSolarData();
 
         if (this.config.basicHeader) {
-            this.data.header = 'SolarEdge PV';
+            this.data.header = 'Widacher';
         }
 
         var self = this;
